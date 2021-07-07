@@ -49,7 +49,7 @@ double atof(char s[])
         power *= 10;
     }
 
-    if (s[i] == 'e') {
+    if (s[i] == 'e' || s[i] == 'E') {
         ++i;
     }
     exp_sign = (s[i] == '-') ? 0.1 : 10;
